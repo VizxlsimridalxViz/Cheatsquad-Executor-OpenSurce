@@ -1,0 +1,92 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cheatsquad"
+        xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit" x:Class="Cheatsquad.MainWindow"
+        mc:Ignorable="d"
+        Title="Cheatsquad" Height="320" Width="520" MinHeight="320" MinWidth="520" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Border 
+            Background="#151515" 
+            Margin="11" 
+            CornerRadius="5">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="4"/>
+            </Border.Effect>
+        </Border>
+        <Image
+            Source="/Icon/Logo_120x40.png"
+            Height="40"
+            Width="120"
+            Margin="16,16,384,264"/>
+        <Button 
+            Content="Execute"
+            Height="20"
+            Width="60" 
+            Margin="16,284,444,16"
+            BorderThickness="0"
+            Background="Transparent"
+            Foreground="White"
+            Style="{DynamicResource ResourceKey=TaskButtonStyle}"/>
+        <avalonedit:TextEditor HorizontalAlignment="Left" Margin="16,61,0,0" VerticalAlignment="Top" Width="372" Height="218" Background="Transparent" BorderBrush="Transparent" ShowLineNumbers="True" LineNumbersForeground="White" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Foreground="White"/>
+        <ListBox Margin="393,61,16,41" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Foreground="White"/>
+        <Button 
+            Content="Clear"
+            Height="20"
+            Width="60" 
+            Margin="81,284,379,16"
+            BorderThickness="0"
+            Background="Transparent"
+            Foreground="White"
+            Style="{DynamicResource ResourceKey=TaskButtonStyle}"/>
+        <Button 
+            Content="Save"
+            Height="20"
+            Width="60" 
+            Margin="146,284,314,16"            
+            BorderThickness="0"
+            Background="Transparent"
+            Foreground="White"
+            Style="{DynamicResource ResourceKey=TaskButtonStyle}"/>
+        <Button 
+            Content="Open"
+            Height="20"
+            Width="60" 
+            Margin="211,284,249,16"
+            BorderThickness="0"
+            Background="Transparent"
+            Foreground="White"
+            Style="{DynamicResource ResourceKey=TaskButtonStyle}"/>
+        <Button 
+            Content="Attach"
+            Height="20"
+            Width="60" 
+            Margin="444,284,16,16"
+            BorderThickness="0"
+            Background="Transparent"
+            Foreground="White"
+            Style="{DynamicResource ResourceKey=TaskButtonStyle}"/>
+        <Button 
+            Content="&#xE711;"
+            Height="20" 
+            FontWeight="ExtraBold"
+            Margin="482,16,16,284"
+            BorderThickness="0"
+            FontFamily="Segoe MDL2 Assets"
+            Background="Transparent"
+            Foreground="White"
+            Style="{DynamicResource ResourceKey=TaskButtonStyle}"/>
+        <Button 
+            Content="&#xE738;"
+            Height="20" 
+            FontWeight="ExtraBold"
+            Margin="460,16,38,284"
+            BorderThickness="0"
+            FontFamily="Segoe MDL2 Assets"
+            Background="Transparent"
+            Foreground="White"
+            Style="{DynamicResource ResourceKey=TaskButtonStyle}"/>
+    </Grid>
+</Window>
